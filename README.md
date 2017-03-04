@@ -1,2 +1,2 @@
 # dockers
-All of the dockers I use to run out packages
+Assortment of dockerfiles I use
