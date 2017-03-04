@@ -1,12 +1,19 @@
 FROM ubuntu:14.04
 
+# No interaction during install
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get -qqy update
 RUN apt-get -qqy install build-essential git libopenmpi-dev openmpi-bin libgsl0-dev
 RUN apt-get -qqy install curl
-
 RUN git clone https://github.com/rainwoodman/fastpm.git && \
 	cd fastpm && \
 	echo "CC = mpicc \nOPENMP = \nCPPFLAGS = -DFASTPM_FFT_PRECISION=32 \nOPTIMIZE = -O3 -g" > Makefile.local && \
 	make
+
+# Expose an address for jupyter notebooks
+EXPOSE 8888
+
+WORKDIR /workspace
 
 ENTRYPOINT ["/bin/bash"]
