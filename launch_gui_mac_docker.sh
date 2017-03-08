@@ -6,6 +6,7 @@
 
 # Define what we are running here.
 CONTAINER=$1
+WORKING_DIR=$2
 COMMAND=/bin/bash
 NIC=en0
 
@@ -31,7 +32,7 @@ docker run \
     -it \
     --workdir="/workspace" \
     -p 8888:8888 \
-    -v "/Users/$USER/Documents/notebooks:/workspace" \
+    -v $WORKING_DIR:/workspace \
     -v $XSOCK:$XSOCK:rw \
     -v $XAUTH:$XAUTH:rw \
     -e DISPLAY=$IPADDR:$DISP_NUM \
