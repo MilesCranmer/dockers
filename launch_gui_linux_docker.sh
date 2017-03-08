@@ -18,7 +18,7 @@ docker run \
     -it \
     --rm \
     --workdir="/workspace" \
-    -p 8899:8899 \
+    -p 8888:8888 \
     -v $2:/workspace \
     -v $XSOCK:$XSOCK \
     -v $XAUTH:$XAUTH \
