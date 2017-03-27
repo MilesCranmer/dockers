@@ -36,14 +36,19 @@ RUN groupadd ciao && useradd -r -m -g ciao -G caldb ciaomgr \
 &&  mkdir -p /opt/ciao_download ${CIAO_ROOT_INSTALL} \
 &&  chown -R ciaomgr:ciao /opt/ciao_download ${CIAO_ROOT_INSTALL}
 
+
+RUN apt-get update && apt-get -qqy install git
+
 USER ciaomgr
 
-COPY .ciaoinstall.rc ciao-install /home/ciaomgr/
+RUN cd /home/ciaomgr && \
+	git clone https://github.com/ldouchy/docker.git && \
+	cp docker/CIAO/4.8/.ciaoinstall.rc /home/ciaomgr/ && \
+	cp docker/CIAO/4.8/ciao-install /home/ciaomgr/
+
 RUN  bash /home/ciaomgr/ciao-install --logdir /home/ciaomgr/ --caldb /opt/CALDB
 
 USER root
-
-# smoke test
 
 CMD bash -c 'source ${CIAO_ROOT_INSTALL}/bin/ciao.bash && export LOGNAME=root'
 
