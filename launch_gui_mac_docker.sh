@@ -7,7 +7,7 @@
 # Define what we are running here.
 CONTAINER=$1
 WORKING_DIR=$2
-COMMAND=/bin/bash
+COMMAND=$3
 NIC=en0
 
 # Grab the ip address of this box
