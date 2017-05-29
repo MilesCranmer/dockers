@@ -1,9 +1,36 @@
-# dockers
-Assortment of dockerfiles I use. I remove them once the Dockerfile is integrated into the master branch.
+# Dockerfiles
+Assortment of dockerfiles I use. Some of them may be otherwise hard to
+build, so the dockerfile may be useful.
+I remove a Dockerfile if it gets integrated into the master branch for
+the library itself.
 
-# List:
+I also have two incuded shell scripts (Linux and OS X)
+which automatically
+set up a X11 for some container, so you can launch a GUI
+from inside it and interact.
+
+# List of Docker containers:
 - spinmob: https://github.com/Spinmob/spinmob
 - cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
 - healpix: http://healpix.jpl.nasa.gov/
 - wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
 
+To build any, run:
+
+    $ docker build -t <image name> -f <filename> .
+
+So, for healpix, this would be:
+
+    $ docker build -t healpix -f healpix .
+
+# GUI usage:
+
+Linux:
+    $ ./launch_gui_linux_docker.sh <image> <directory to link> 
+
+Mac (a bit more developed):
+    $ ./launch_gui_mac_docker.sh <image> <directory to link> <starting command> <container name>
+
+Note that the Mac version requires Xquartz and socat installed.
+
+The default port for both is 8888.
