@@ -1,6 +1,7 @@
 # Dockerfiles
-Assortment of dockerfiles I use. Some of them may be otherwise hard to
-build, so the dockerfile may be useful.
+Assortment of dockerfiles I use. Some of the packages
+may be otherwise hard to
+build, so the dockerfile may save some time.
 I remove a Dockerfile if it gets integrated into the master branch for
 the library itself.
 
