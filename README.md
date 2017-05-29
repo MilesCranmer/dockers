@@ -26,9 +26,11 @@ So, for healpix, this would be:
 # GUI usage:
 
 Linux:
+
     $ ./launch_gui_linux_docker.sh <image> <directory to link> 
 
 Mac (a bit more developed):
+
     $ ./launch_gui_mac_docker.sh <image> <directory to link> <starting command> <container name>
 
 Note that the Mac version requires Xquartz and socat installed.
