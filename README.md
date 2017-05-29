@@ -16,6 +16,7 @@ from inside it and interact.
 - cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
 - healpix: http://healpix.jpl.nasa.gov/
 - wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
+- latex2rtf: https://sourceforge.net/projects/latex2rtf/
 
 To build any, run:
 
