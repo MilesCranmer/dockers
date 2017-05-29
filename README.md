@@ -12,6 +12,7 @@ from inside it and interact.
 
 # List of Docker containers:
 - spinmob: https://github.com/Spinmob/spinmob
+- ciao: http://cxc.harvard.edu/ciao/
 - cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
 - healpix: http://healpix.jpl.nasa.gov/
 - wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
