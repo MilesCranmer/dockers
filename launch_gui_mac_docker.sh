@@ -37,6 +37,7 @@ docker run \
     -v $XAUTH:$XAUTH:rw \
     -e DISPLAY=$IPADDR:$DISP_NUM \
     -e XAUTHORITY=$XAUTH \
+    --name $4 \
     $CONTAINER \
     $COMMAND
 
