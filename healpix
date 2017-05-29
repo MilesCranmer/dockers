@@ -1,4 +1,3 @@
-FROM nvidia/cuda
 FROM buildpack-deps:xenial
 FROM cfitsio
 
