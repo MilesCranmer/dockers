@@ -9,4 +9,6 @@ WORKDIR /tmp
 RUN wget https://raw.githubusercontent.com/MilesCranmer/bootstrap/master/bootstrap.sh && \
     chmod +x bootstrap.sh && ./bootstrap.sh
 
+WORKDIR /workspace
+
 RUN ["/bin/zsh"]
