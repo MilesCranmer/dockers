@@ -18,6 +18,12 @@ images using, e.g.,  `docker pull mcranmer/dockers:cuda-buildpack`.
 List of Docker containers:
 ==========================
 
+Quick commands
+--------------
+
+-  latex2rtf: https://sourceforge.net/projects/latex2rtf/
+-  pandoc: http://pandoc.org/
+
 Other libraries
 ---------------
 
@@ -26,7 +32,6 @@ Other libraries
 -  cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
 -  healpix: http://healpix.jpl.nasa.gov/
 -  wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
--  latex2rtf: https://sourceforge.net/projects/latex2rtf/
 
 Personal images
 ---------------
