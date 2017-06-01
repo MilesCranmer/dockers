@@ -31,11 +31,8 @@ Other libraries
 Personal images
 ---------------
 
-- cuda-buildpack: Copy of buildpack-deps Dockerfile_, but
-  build on top of nvidia/cuda_.
-
-.. _Dockerfile: https://github.com/docker-library/buildpack-deps/blob/5589bc25a700d8b22b23af0964b77a75de47607d/xenial/Dockerfile
-.. _nvidia/cuda: https://github.com/NVIDIA/nvidia-docker
+- cuda-buildpack: Copy of `buildpack-deps Dockerfile<https://github.com/docker-library/buildpack-deps/blob/5589bc25a700d8b22b23af0964b77a75de47607d/xenial/Dockerfile>`_, but
+  built on top of `nvidia/cuda<https://github.com/NVIDIA/nvidia-docker>`_.
 
 To build any, run:
 
