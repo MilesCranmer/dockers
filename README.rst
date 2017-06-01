@@ -41,8 +41,11 @@ from inside it and interact. You probably need to fiddle with
 the environment of the container (e.g., `ENV DISPLAY :0`) to
 get it to work.
 
-List of Docker containers:
-==========================
+List of Dockerfiles (all built on `Docker Hub`__):
+==================================================
+
+__ https://hub.docker.com/r/mcranmer/dockers/tags/
+
 
 Quick commands
 --------------
@@ -70,6 +73,13 @@ Personal images
   
   - This should give you a relatively complete
     build environment in Ubuntu 16.04 on a GPU-enabled machine.
+
+- dev: My full zsh/vim development environment, based off of
+  my `bootstrap
+  <https://github.com/MilesCranmer/bootstrap>`_ repo, which pulls
+  from my `vimrc
+  <https://github.com/MilesCranmer/vimrc>`_ and `zshrc
+  <https://github.com/MilesCranmer/zshrc>`_ repos.
 
 
 Manual building
