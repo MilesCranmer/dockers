@@ -1,9 +1,8 @@
 Dockerfiles
 ===========
 
-Assortment of dockerfiles, with
-their images all on docker hub, as tags under this
-repo.
+This is assortment of dockerfiles, images, scripts, and other things
+that I find useful.
 
 Example
 ^^^^^^^
@@ -18,21 +17,24 @@ This command pulls from `mcranmer/dockers:latex2rtf`, runs it,
 then executes the `latex2rtf` command inside the container
 on the linked file `myfile.tex`, which creates an rtf file.
 
-Or, if you just want to build off one of my images, add:
+Or, if you want to build a solid build
+system on top the nvidia/cuda image, add to your dockerfile:
 
 .. code::
     
     FROM mcranmer/dockers:cuda-buildpack
 
 Which gives you everything in the buildpack-deps:xenial
-image on top of an nvidia/cuda base container. I have
-some other images for notoriously hard-to-build packages
-as well.
+image on top of an nvidia/cuda base container.
+
+I'm also
+keeping some dockerfiles for notoriously
+difficult to built astronomy software packages.
 
 Other scripts
 ^^^^^^^^^^^^^
 
-I also have two incuded shell scripts (Linux and OS X) which
+I have two incuded shell scripts (Linux and OS X) which
 automatically set up a X11 for some container, so you can launch a GUI
 from inside it and interact. You probably need to fiddle with 
 the environment of the container (e.g., `ENV DISPLAY :0`) to
