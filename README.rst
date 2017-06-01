@@ -1,19 +1,42 @@
 Dockerfiles
 ===========
 
-Assortment of dockerfiles I use. Some of the packages may be otherwise
-hard to build, so the dockerfile may save some time. I remove a
-Dockerfile if it gets integrated into the master branch for the library
-itself.
+Assortment of dockerfiles, with
+their images all on docker hub, as tags under this
+repo.
+
+Example
+^^^^^^^
+
+Converting latex to rich text format:
+
+.. code::
+    
+    docker_cmd latex2rtf latex2rtf myfile.tex
+
+This command pulls from `mcranmer/dockers:latex2rtf`, runs it,
+then executes the `latex2rtf` command inside the container
+on the linked file `myfile.tex`, which creates an rtf file.
+
+Or, if you just want to build off one of my images, add:
+
+.. code::
+    
+    FROM mcranmer/dockers:cuda-buildpack
+
+Which gives you everything in the buildpack-deps:xenial
+image on top of an nvidia/cuda base container. I have
+some other images for notoriously hard-to-build packages
+as well.
+
+Other scripts
+^^^^^^^^^^^^^
 
 I also have two incuded shell scripts (Linux and OS X) which
 automatically set up a X11 for some container, so you can launch a GUI
-from inside it and interact.
-
-**Update**: I am now going to use docker hub to host images for all of these
-dockerfiles. To make this work, I am putting a different
-Dockerfile on each branch. Then, you will be able to pull
-images using, e.g.,  `docker pull mcranmer/dockers:cuda-buildpack`.
+from inside it and interact. You probably need to fiddle with 
+the environment of the container (e.g., `ENV DISPLAY :0`) to
+get it to work.
 
 List of Docker containers:
 ==========================
@@ -44,14 +67,9 @@ Personal images
   - This should give you a relatively complete
     build environment in Ubuntu 16.04 on a GPU-enabled machine.
 
-Other libraries
----------------
 
--  spinmob: https://github.com/Spinmob/spinmob
--  ciao: http://cxc.harvard.edu/ciao/
--  cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
--  healpix: http://healpix.jpl.nasa.gov/
--  wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
+Manual building
+===============
 
 To build any, run:
 
