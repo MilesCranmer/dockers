@@ -115,3 +115,19 @@ Mac (a bit more developed):
 Note that the Mac version requires Xquartz and socat installed.
 
 The default port for both is 8888.
+
+
+More examples
+=============
+
+Use my dev environment to edit a file:
+
+.. code::
+
+    $ ./docker_command_tty.sh dev vim myfile.txt
+
+Look at an astronomical image on Mac OS:
+
+.. code::
+
+    $ ./launch_gui_mac_docker.sh mcranmer/dockers:ds9 $(pwd) "ds9 /workspace/myfile.fits" my_container
