@@ -17,7 +17,7 @@ This command pulls from `mcranmer/dockers:latex2rtf`, runs it,
 then executes the `latex2rtf` command inside the container
 on the linked file `myfile.tex`, which creates an rtf file.
 
-Or, if you want to build a solid build
+Or, if you want a solid build
 system on top the nvidia/cuda image, add to your dockerfile:
 
 .. code::
@@ -29,7 +29,8 @@ image on top of an nvidia/cuda base container.
 
 I'm also
 keeping some dockerfiles for notoriously
-difficult to built astronomy software packages.
+difficult to built astronomy software packages. All of these
+things are listed below.
 
 Other scripts
 -------------
