@@ -1,0 +1,12 @@
+FROM buildpack-deps:xenial
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    vim \
+    zsh
+
+WORKDIR /tmp
+
+RUN wget https://raw.githubusercontent.com/MilesCranmer/bootstrap/master/bootstrap.sh && \
+    chmod +x bootstrap.sh && ./bootstrap.sh
+
+RUN ["/bin/zsh"]
