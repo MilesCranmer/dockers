@@ -35,6 +35,8 @@ Personal images
   <https://github.com/docker-library/buildpack-deps/blob/5589bc25a700d8b22b23af0964b77a75de47607d/xenial/Dockerfile>`_, but
   built on top of `nvidia/cuda
   <https://github.com/NVIDIA/nvidia-docker>`_.
+  
+  - This should give you a relatively complete build environment in Ubuntu 16.04 on a GPU-enabled machine.
 
 To build any, run:
 
