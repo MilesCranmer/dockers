@@ -5,7 +5,7 @@ This is assortment of dockerfiles, images, scripts, and other things
 that I find useful.
 
 Example
-^^^^^^^
+-------
 
 Converting latex to rich text format:
 
@@ -32,7 +32,7 @@ keeping some dockerfiles for notoriously
 difficult to built astronomy software packages.
 
 Other scripts
-^^^^^^^^^^^^^
+-------------
 
 I have two incuded shell scripts (Linux and OS X) which
 automatically set up a X11 for some container, so you can launch a GUI
