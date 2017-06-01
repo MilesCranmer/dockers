@@ -18,16 +18,6 @@ images using, e.g.,  `docker pull mcranmer/dockers:cuda-buildpack`.
 List of Docker containers:
 ==========================
 
-Other libraries
----------------
-
--  spinmob: https://github.com/Spinmob/spinmob
--  ciao: http://cxc.harvard.edu/ciao/
--  cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
--  healpix: http://healpix.jpl.nasa.gov/
--  wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
--  latex2rtf: https://sourceforge.net/projects/latex2rtf/
-
 Personal images
 ---------------
 
@@ -37,6 +27,16 @@ Personal images
   <https://github.com/NVIDIA/nvidia-docker>`_.
   
   - This should give you a relatively complete build environment in Ubuntu 16.04 on a GPU-enabled machine.
+
+Other libraries
+---------------
+
+-  spinmob: https://github.com/Spinmob/spinmob
+-  ciao: http://cxc.harvard.edu/ciao/
+-  cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
+-  healpix: http://healpix.jpl.nasa.gov/
+-  wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
+-  latex2rtf: https://sourceforge.net/projects/latex2rtf/
 
 To build any, run:
 
