@@ -73,13 +73,13 @@ Manual building
 
 To build any, run:
 
-::
+.. code::
 
     $ docker build -t <image name> -f <filename> .
 
 So, for healpix, this would be:
 
-::
+.. code::
 
     $ docker build -t healpix -f healpix .
 
@@ -88,13 +88,13 @@ GUI usage:
 
 Linux:
 
-::
+.. code::
 
     $ ./launch_gui_linux_docker.sh <image> <directory to link> 
 
 Mac (a bit more developed):
 
-::
+.. code::
 
     $ ./launch_gui_mac_docker.sh <image> <directory to link> <starting command> <container name>
 
