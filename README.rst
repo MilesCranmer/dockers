@@ -24,6 +24,15 @@ Quick commands
 -  latex2rtf: https://sourceforge.net/projects/latex2rtf/
 -  pandoc: http://pandoc.org/
 
+Other libraries
+---------------
+
+-  spinmob: https://github.com/Spinmob/spinmob
+-  ciao: http://cxc.harvard.edu/ciao/
+-  cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
+-  healpix: http://healpix.jpl.nasa.gov/
+-  wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
+
 Personal images
 ---------------
 
@@ -32,8 +41,8 @@ Personal images
   built on top of `nvidia/cuda
   <https://github.com/NVIDIA/nvidia-docker>`_.
   
-  - This should give you a relatively complete build environment in Ubuntu 16.04 on a GPU-enabled machine.
-=======
+  - This should give you a relatively complete
+    build environment in Ubuntu 16.04 on a GPU-enabled machine.
 
 Other libraries
 ---------------
