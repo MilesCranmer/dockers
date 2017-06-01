@@ -11,7 +11,7 @@ Converting latex to rich text format:
 
 .. code::
     
-    docker_cmd latex2rtf latex2rtf myfile.tex
+    ./docker_cmd.sh latex2rtf latex2rtf myfile.tex
 
 This command pulls from `mcranmer/dockers:latex2rtf`, runs it,
 then executes the `latex2rtf` command inside the container
