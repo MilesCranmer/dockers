@@ -10,8 +10,16 @@ I also have two incuded shell scripts (Linux and OS X) which
 automatically set up a X11 for some container, so you can launch a GUI
 from inside it and interact.
 
+**Update**: I am now going to use docker hub to host images for all of these
+dockerfiles. To make this work, I am putting a different
+Dockerfile on each branch. Then, you will be able to pull
+images using, e.g.,  `docker pull mcranmer/dockers:cuda-buildpack`.
+
 List of Docker containers:
 ==========================
+
+Other libraries
+---------------
 
 -  spinmob: https://github.com/Spinmob/spinmob
 -  ciao: http://cxc.harvard.edu/ciao/
@@ -19,6 +27,15 @@ List of Docker containers:
 -  healpix: http://healpix.jpl.nasa.gov/
 -  wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
 -  latex2rtf: https://sourceforge.net/projects/latex2rtf/
+
+Personal images
+---------------
+
+- cuda-buildpack: Copy of buildpack-deps Dockerfile_, but
+  build on top of nvidia/cuda_.
+
+.. _Dockerfile: https://github.com/docker-library/buildpack-deps/blob/5589bc25a700d8b22b23af0964b77a75de47607d/xenial/Dockerfile
+.. _nvidia/cuda: https://github.com/NVIDIA/nvidia-docker
 
 To build any, run:
 
