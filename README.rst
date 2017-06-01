@@ -55,6 +55,7 @@ Other libraries
 
 -  spinmob: https://github.com/Spinmob/spinmob
 -  ciao: http://cxc.harvard.edu/ciao/
+-  ds9: http://ds9.si.edu/
 -  cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
 -  healpix: http://healpix.jpl.nasa.gov/
 -  wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
