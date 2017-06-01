@@ -1,5 +1,4 @@
-FROM buildpack-deps:xenial
-FROM cfitsio
+FROM mcranmer/dockers:cfitsio
 
 RUN cd /tmp && \
 	wget ftp://ftp.atnf.csiro.au/pub/software/wcslib/wcslib.tar.bz2 && \
