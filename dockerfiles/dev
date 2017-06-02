@@ -2,7 +2,9 @@ FROM buildpack-deps:xenial
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     vim \
-    zsh
+    zsh \
+    manpages-posix \
+    manpages-posix-dev
 
 WORKDIR /tmp
 
