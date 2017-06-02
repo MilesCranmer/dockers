@@ -11,4 +11,4 @@ RUN wget https://raw.githubusercontent.com/MilesCranmer/bootstrap/master/bootstr
 
 WORKDIR /workspace
 
-RUN ["/bin/zsh"]
+CMD ["/bin/zsh"]
