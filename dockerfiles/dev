@@ -1,4 +1,4 @@
-FROM buildpack-deps:xenial
+FROM mcranmer/dockers:cuda-buildpack
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     vim-nox-py2 \
