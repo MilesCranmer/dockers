@@ -19,16 +19,6 @@ This command pulls from `mcranmer/dockers:latex2rtf`, runs it,
 then executes the `latex2rtf` command inside the container
 on the linked file `myfile.tex`, which creates an rtf file.
 
-Or, if you want a solid build
-system on top the nvidia/cuda image, add to your dockerfile:
-
-.. code::
-    
-    FROM mcranmer/dockers:cuda-buildpack
-
-Which gives you everything in the buildpack-deps:xenial
-image on top of an nvidia/cuda base container.
-
 I'm also
 keeping some dockerfiles for notoriously
 difficult to built astronomy software packages. All of these
@@ -64,24 +54,6 @@ Other libraries
 -  cfitsio: https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html
 -  healpix: http://healpix.jpl.nasa.gov/
 -  wcslib: http://www.atnf.csiro.au/people/mcalabre/WCS/
-
-Personal images
----------------
-
-- cuda-buildpack: Copy of `buildpack-deps Dockerfile
-  <https://github.com/docker-library/buildpack-deps/blob/5589bc25a700d8b22b23af0964b77a75de47607d/xenial/Dockerfile>`_, but
-  built on top of `nvidia/cuda
-  <https://github.com/NVIDIA/nvidia-docker>`_.
-  
-  - This should give you a relatively complete
-    build environment in Ubuntu 16.04 on a GPU-enabled machine.
-
-- dev: My full zsh/vim development environment, based off of
-  my `bootstrap
-  <https://github.com/MilesCranmer/bootstrap>`_ repo, which pulls
-  from my `vimrc
-  <https://github.com/MilesCranmer/vimrc>`_ and `zshrc
-  <https://github.com/MilesCranmer/zshrc>`_ repos.
 
 
 Manual building
